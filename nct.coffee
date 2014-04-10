@@ -16,12 +16,14 @@ module.exports = (robot) ->
         results = body.responseData.results
 
         unless results.length > 0
-          msg.send "No song for \"#{query}\""
+          msg.send 'Làm khó nhau quá, không tìm thấy **'+query+'**'
           return
 
+        content = ''
         results.forEach (link) ->
-          if link.url.match /bai-hat/i
-            msg.send link.url
-            # Just send one link
-            return         
+          if link.url.match /\/bai-hat\//i
+            content = link.url
+
+        # Just send one link
+        msg.send content
 
