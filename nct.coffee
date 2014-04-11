@@ -6,7 +6,7 @@
 module.exports = (robot) ->
   robot.respond /(nct|nhaccuatui|nhaccuatao) (.*)/i, (msg) ->
     query = msg.match[2]
-    robot.http("http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=Luca")
+    robot.http("http://ajax.googleapis.com/ajax/services/search/web")
       .query({
         v: '1.0',
         q: query+' site:nhaccuatui.com'
