@@ -7,8 +7,13 @@ randomInt = (low, high) ->
   return Math.floor Math.random() * (high - low + 1) + low
 
 module.exports = (robot) ->
-  robot.respond /(oi|ơi|a|à|hỡi|hoi|nói nghe nè)(.*)$/i, (msg) ->
+  robot.respond /(oi|ơi|à|hỡi|hoi|nói nghe nè)(.*)$/i, (msg) ->
     msgs = [
+      'Dạ?',
+      'Dạ mẹ?',
+      'Thôi thế từ đây anh cố đành quên rằng có người...',
+      'Mình yêu nhau đi',
+      'http://youtu.be/funAgxkPXRg?t=24s',
       'Vâng có em',
       'Sao đó thím?',
       'Ai kêu tui đó, có tui đây',
