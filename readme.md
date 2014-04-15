@@ -12,3 +12,6 @@ Tìm bài hát trên [Zing MP3](http://mp3.zing.vn/) với `keyword`. Trả về
 
 #### hubot tuyet bitch
 Trả về một hình ngẫu nhiêu ở [Tuyết Bitch Collection](https://www.facebook.com/tuyetcollection)
+
+#### hubot tratu <query>
+Tra từ Anh - Việt [tratu.vn](http://tratu.soha.vn)
