@@ -1,8 +1,4 @@
-# Description:
-#   Look up a word in tratu.vn
-#
-# Commands:
-#   hubot tratu <word>
+
 S = require 'string'
 
 module.exports = (robot) ->
